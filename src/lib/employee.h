@@ -5,27 +5,42 @@
 // An employee includes the infomation of id, name, sex, type, faculty, major,
 // title, etc. So let's define some enums here.
 enum Sex{
-    Male,
-    Female,
-    Others
+    male,
+    female,
+    others
 };
 
 enum EmployeeType{
-    Faculty,
-    Assistant,
-    Staff
+    faculty_type,
+    assistant,
+    staff
 };
 
 enum EmployeeTitle{
-    Professor,
-    AssociateProfessor,
-    SeniorLecturer,
-    Lecturer,
-    TeachingAssistant
+    professor,
+    associateProfessor,
+    seniorLecturer,
+    lecturer,
+    teachingAssistant
+};
+
+// We have to maintain a list of employees, where we may sort or filter the
+// list by some kinds of properities, and that's why we need another enum
+// here.
+enum EmployeeProperity{
+    id,
+    name,
+    sex,
+    type,
+    faculty_prop,
+    title
 };
 
 // The main character of this file.
 struct Employee{
+// As there is almost no limits to revise the infomation of an employee, I
+// keep all of them to be public.
+public:
     unsigned long id;
     std::string name;
     enum Sex sex;
@@ -33,4 +48,15 @@ struct Employee{
     std::string faculty;
     std::string major;
     enum EmployeeTitle title;
+
+    // but there will be no default constructor to generate a null employee.
+    Employee(
+        unsigned long id,
+        char* name,
+        enum Sex sex,
+        enum EmployeeType type,
+        char* faculty,
+        char* major,
+        enum EmployeeTitle title
+    );
 };
