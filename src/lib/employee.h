@@ -1,23 +1,22 @@
 // This file defines the structure of a person.
-module;
+#pragma once
 #include <string>
-export module employee;
 
 // An employee includes the infomation of id, name, sex, type, faculty, major,
 // title, etc. So let's define some enums here.
-export enum Sex{
+enum Sex{
     Male,
     Female,
     Others
 };
 
-export enum EmployeeType{
+enum EmployeeType{
     Faculty,
     Assistant,
     Staff
 };
 
-export enum EmployeeTitle{
+enum EmployeeTitle{
     Professor,
     AssociateProfessor,
     SeniorLecturer,
@@ -26,7 +25,7 @@ export enum EmployeeTitle{
 };
 
 // The main character of this file.
-export struct Person{
+struct Employee{
     unsigned long id;
     std::string name;
     enum Sex sex;
