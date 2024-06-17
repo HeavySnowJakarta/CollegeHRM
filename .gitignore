@@ -1,3 +1,5 @@
+# == Cache by building systems ==
+
 # Xmake cache
 .xmake/
 build/
@@ -10,3 +12,7 @@ compile_commands.json
 
 # This file includes some of my privacies.
 info.txt
+
+# == Editor specific configurations and caches ==
+# VSCode.
+.vscode/
