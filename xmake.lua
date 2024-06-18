@@ -17,5 +17,5 @@ target("CollegeHRM")
     add_files("src/*.cpp")
     add_files("src/qml.qrc")
 
-    add_headerfiles("src/lib/*.h")
     add_packages("cjson")
+    add_headerfiles("src/lib/*.h")
