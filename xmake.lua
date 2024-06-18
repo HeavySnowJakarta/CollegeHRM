@@ -19,3 +19,8 @@ target("CollegeHRM")
 
     add_packages("cjson")
     add_headerfiles("src/lib/*.h")
+
+    -- Automatically generate `qml.qrc`.
+    before_build(function (target) 
+        os.run("lua scripts/generate_qrc.lua")
+    end)
