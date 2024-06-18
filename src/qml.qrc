@@ -674,6 +674,7 @@
         <file>assets/icons/x-square-fill.svg</file> 
         <file>assets/icons/x-square.svg</file> 
         <file>assets/icons/x.svg</file> 
+        <file>ui/components/titlebar.qml</file> 
         <file>ui/pages/start/button.qml</file> 
         <file>ui/pages/start/screen.qml</file> 
     </qresource> 
