@@ -22,7 +22,7 @@ add(){
     find "$1" -type f | while read -r file; do
         if [ `basename "$file"` != 'README.txt' ]; then
             relativePath="${file#$rootPath$relPath/}"
-            echo "        <file> $relativePath </file>" >> $fullTargetPath
+            echo "        <file>$relativePath</file>" >> $fullTargetPath
         fi
     done
 }

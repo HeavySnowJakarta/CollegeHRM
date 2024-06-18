@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
         // The type of connection.
         Qt::QueuedConnection
     );
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/ui/pages/start/screen.qml")));
 
     // Run the GUI app and deal with the events.
     return app.exec();

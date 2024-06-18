@@ -23,7 +23,7 @@ target("CollegeHRM")
     -- Automatically generate `qml.qrc`.
     before_build(function (target) 
         if os.host() == 'windows' then
-            os.exec('cmd /C ./scripts/generate_qrc.bat')
+            os.exec('cmd /C scripts\\generate_qrc.bat')
         else
             os.exec('./scripts/generate_qrc.sh')
         end

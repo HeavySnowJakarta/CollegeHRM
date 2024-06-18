@@ -36,7 +36,7 @@ for /R %~1 %%F in (*) do (
     set "relativePath=!relativePath:\=/!"
 
     if %%~nxF neq README.txt (
-        echo ^        ^<file^> !relativePath! ^</file^> >> %FULL_TARGET_PATH%
+        echo ^        ^<file^>!relativePath!^</file^> >> %FULL_TARGET_PATH%
     )
 )
 goto :eof
