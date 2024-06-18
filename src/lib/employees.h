@@ -1,6 +1,8 @@
 // This file defines a container of employees, which is maintained during
 // the lifetime of the program.
-#pragma once
+#ifndef _EMPLOYEES
+#define _EMPLOYEES
+
 #include <string>
 #include <vector>
 #include <unordered_map>
@@ -14,17 +16,25 @@ private:
     // Where the info of the employees are stored.
     std::vector<Employee> employees;
 
-    // A list of different faculties.
-    // As there is no limit of faculties (there are as string), it's not wasy
-    // for us to see how many faculties we have. Thus we have to maintain a
-    // list that records the faculties. The key of this container stands for
-    // the faculty, and the value stands for the number of it.
-    std::unordered_map<std::string, int> faculties;
+    // To count the number of the same properity (the private fields of the
+    // employees) conveniently, we use unordered maps to store and manage
+    // them dynamically.
+    std::unordered_map<Sex, int> sex_num;
+    std::unordered_map<std::string, int> faculty_num;
+    std::unordered_map<EmployeeType, int> type_num;
+    std::unordered_map<EmployeeTitle, int> title_num;
+
+    // The function to initialize the containers above. Called by the
+    // constructor(s).
+    void initContainers();
+
+    // TODO: The path to save autoly.
 
 public:
     // Initialize the container.
+    // Used to create a new database.
     inline Employees(){
-        employees = std::vector<Employee>();
+        initContainers();
     }
 
     // Add an employee.
@@ -34,26 +44,31 @@ public:
     // Delete an employee based on its id number.
     void del(unsigned int id);
 
-    // Get the pointer of an employee, then get and revise its infomation.
-    // I think getting the pointer here is actually safe because when there
-    // is something that have to be considered carefully (eg. the major may
-    // be limited on a list) the methods of `Employee` should be designed
-    // properly. Someone may think provide methods here instead may be safer
-    // which I actually don't think so. In fact it provides more redundancy
-    // here.
-    Employee* get(unsigned int id);
+    // Get the iterator of a needed employee by its id. Then you can
+    // read and write the fields of it. What can be accessed has been
+    // already controled by `struct Employee`. When it does not exist,
+    // `employees.end()` would be returned.
+    std::vector<Employee>::iterator get(unsigned int id);
+
+    // When there is no matching `Employee` object on `employees`,
+    // `employees.end()` would be returned. So the outer world have to know
+    // a way to compare the result with `employees.end()`. That's why we
+    // return `employees.end()` here.
+    inline std::vector<Employee>::iterator getEnd(){
+        return employees.end();
+    }
 
     // Fuzzy search by id and return a list of employees.
-    std::vector<Employee*> getById(unsigned int id);
+    std::vector<std::vector<Employee>::iterator> getById(unsigned int id);
 
     // Fuzzy search by name.
-    std::vector<Employee*> getByName(char* name);
+    std::vector<std::vector<Employee>::iterator> getByName(char* name);
 
     // Fuzzy search by sex.
-    std::vector<Employee*> getBySex(Sex sex);
+    std::vector<std::vector<Employee>::iterator> getBySex(Sex sex);
 
     // Fuzzy search by type.
-    std::vector<Employee*> getByType(EmployeeType type);
+    std::vector<std::vector<Employee>::iterator> getByType(EmployeeType type);
 
     // Count the number of given properity.
     unsigned int countBySex(Sex sex);
@@ -64,3 +79,5 @@ public:
     // Spread the list of faculties to the outer world.
     std::vector<const char*> getCurrentFaculties();
 };
+
+#endif

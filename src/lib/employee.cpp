@@ -18,3 +18,19 @@ Employee::Employee(
     this->major = std::string(major);
     this->title = title;
 }
+
+Sex Employee::getSex(){
+    return sex;
+}
+
+const char* Employee::getFaculty(){
+    return faculty.c_str();
+}
+
+EmployeeType Employee::getType(){
+    return type;
+}
+
+EmployeeTitle Employee::getTitle(){
+    return title;
+}

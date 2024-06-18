@@ -1,4 +1,4 @@
--- Set project name and language.
+-- Basic info.
 set_project("CollegeHRM")
 set_languages("cxxlatest")
 
@@ -8,9 +8,14 @@ add_rules("plugin.compile_commands.autoupdate", {outputdir = '.vscode'})
 set_config("buildir", "build")
 set_config("export_compile_commands", true)
 
+-- Library dependencies.
+add_requires("cjson")
+
+-- Target building.
 target("CollegeHRM")
     add_rules("qt.quickapp")
     add_files("src/*.cpp")
     add_files("src/qml.qrc")
 
     add_headerfiles("src/lib/*.h")
+    add_packages("cjson")
