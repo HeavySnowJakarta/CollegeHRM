@@ -20,7 +20,6 @@ College Human Resource Manager
 + Proper C/C++ toolchain (MSVC or GCC for example).
 + Qt (>=6.4) that fit the C/C++ toolchain with Qt Quick built-in.
 + Xmake >= 2.6.1
-+ Lua >= 5.1
 
 ## Build&Run
 
