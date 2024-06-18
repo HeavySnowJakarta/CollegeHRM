@@ -28,6 +28,13 @@ private:
     // constructor(s).
     void initContainers();
 
+    // See if a string includes another string. Used by `getById()` and
+    // `getByName()`.
+    inline static bool contains(
+        const std::string& long_str,
+        const std::string& short_str
+    );
+
     // TODO: The path to save autoly.
 
 public:
@@ -58,23 +65,41 @@ public:
         return employees.end();
     }
 
+    // Set the provate fields of an employee, with updating the counters.
+    void setSex(std::vector<Employee>::iterator employee, Sex sex);
+    void setFaculty(
+        std::vector<Employee>::iterator employee,
+        const char* faculty
+    );
+    void setType(std::vector<Employee>::iterator employee, EmployeeType type);
+    void setTitle(
+        std::vector<Employee>::iterator employee,
+        EmployeeTitle title
+    );
+
     // Fuzzy search by id and return a list of employees.
     std::vector<std::vector<Employee>::iterator> getById(unsigned int id);
 
     // Fuzzy search by name.
     std::vector<std::vector<Employee>::iterator> getByName(char* name);
 
-    // Fuzzy search by sex.
+    // Get a list that the elements fits the given sex.
     std::vector<std::vector<Employee>::iterator> getBySex(Sex sex);
 
-    // Fuzzy search by type.
+    // Get a list that the elements fits the given type.
     std::vector<std::vector<Employee>::iterator> getByType(EmployeeType type);
 
     // Count the number of given properity.
-    unsigned int countBySex(Sex sex);
-    unsigned int countByFaculty(char* faculty);
-    unsigned int countByType(EmployeeType type);
-    unsigned int countByLevel(EmployeeTitle title);
+    inline int countBySex(Sex sex){
+        return sex_num[sex];
+    }
+    int countByFaculty(char* faculty);
+    inline int countByType(EmployeeType type){
+        return type_num[type];
+    }
+    inline int countByLevel(EmployeeTitle title){
+        return title_num[title];
+    }
 
     // Spread the list of faculties to the outer world.
     std::vector<const char*> getCurrentFaculties();
