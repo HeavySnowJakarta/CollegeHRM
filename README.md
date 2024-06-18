@@ -29,4 +29,4 @@ xmake run
 
 That's all (when the toolchain is set properly).
 
-On current stage, the backend is on development while the development of frontend has not started yet, so you'll only see an example page after compliling (or compliling does not pass is also a normal case).
+On current stage, the front-end development is just on progress, so you'll only see an example page after compliling (or compliling does not pass is also a normal case).

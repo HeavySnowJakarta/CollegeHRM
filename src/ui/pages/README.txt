@@ -1,0 +1,1 @@
+Different pages are placed into different directories here.
