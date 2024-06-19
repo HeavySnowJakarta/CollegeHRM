@@ -19,6 +19,10 @@ target("CollegeHRM")
 
     add_packages("cjson")
     add_headerfiles("src/lib/*.h")
+        add_defines("QT_DEBUG")
+        set_symbols("debug")       -- Add debug symbols
+        set_optimize("none") 
+        add_ldflags("/SUBSYSTEM:CONSOLE") 
 
     -- Automatically generate `qml.qrc`.
     --[[
