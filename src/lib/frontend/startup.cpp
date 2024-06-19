@@ -1,6 +1,7 @@
 #include "startup.h"
 #include "qfiledialog.h"
 #include "qmessagebox.h"
+#include "qobject.h"
 #include "qstringliteral.h"
 
 #include <QString>
@@ -10,7 +11,7 @@
 #include <QQuickView>
 #include <QQmlContext>
 
-void Startup::create(){
+void Startup::create(QObject* window){
     // Open a dialog and let the user to choose where to save the file.
     QString file_path = QFileDialog::getSaveFileName(
         nullptr,
@@ -19,10 +20,10 @@ void Startup::create(){
         "Database Files (*.dat)"
     );
 
-    openNewWindow(file_path);
+    openNewWindow(window, file_path);
 }
 
-void Startup::open(){
+void Startup::open(QObject* window){
     // Open a dialog and let the user to select the file.
     QString file_path = QFileDialog::getOpenFileName(
         nullptr,
@@ -31,10 +32,10 @@ void Startup::open(){
         "Database Files (*.dat)"
     );
 
-    openNewWindow(file_path);
+    openNewWindow(window, file_path);
 }
 
-void Startup::openNewWindow(QString db_path){
+void Startup::openNewWindow(QObject* window, QString db_path){
     if (db_path.isEmpty()){
         // Show a message box to the user that we failed to open the
         // database.

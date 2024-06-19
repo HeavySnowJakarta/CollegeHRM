@@ -17,6 +17,8 @@ Rectangle {
     border.color: "black"
     border.width: 3
 
+    signal clicked
+
     Image {
         id: icon
         anchors.horizontalCenter: parent.horizontalCenter
@@ -45,7 +47,7 @@ Rectangle {
         }
 
         onClicked: {
-            // TODO: Mouse event.
+            buttonStartScreen.clicked
         }
     }
 

@@ -3,17 +3,26 @@
 // and open an existing database.
 
 #pragma once
+#include "qobject.h"
+#include "qtmetamacros.h"
 #include <QString>
+#include <QObject>
 
-class Startup{
+class Startup : public QObject{
+    Q_OBJECT // The macro of QObject definitions.
+
 private:
     // Open the page of operations after opening the database.
-    static void openNewWindow(QString db_path);
+    void openNewWindow(QObject* window, QString db_path);
 
 public:
+    // Recieve the `parent` parameter.
+    explicit Startup(QObject* parent = nullptr) : QObject(parent){}
+
+public slots:
     // Create a new database. Corresponding to the button `New`.
-    static void create();
+    void create(QObject* current_window_ptr);
 
     // Open an existing database. Corresponding to the button `Open`.
-    static void open();
+    void open(QObject* current_window_ptr);
 };

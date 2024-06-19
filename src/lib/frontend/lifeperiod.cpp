@@ -4,6 +4,9 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QDebug>
+#include <QQmlContext>
+
+#include "startup.h"
 
 void App::debug(const char* msg){
     qDebug() << "\033[34m" << msg << "\033[0m";
@@ -33,13 +36,17 @@ App::App(int argc, char** argv):
         Qt::QueuedConnection
     );
 
+    // Register the slot function of loading the database and opening the
+    // opeation page.
+    Startup startupManager = Startup();
+    engine.rootContext()->setContextProperty("startup", &startupManager);
+
     // Load the QML file.
     debug("Trying to load startup QML file...");
     engine.load(start_qml_url);
-
-    debug("Now application loop has started.");
 }
 
 int App::exec(){
+    debug("Now application loop has started.");
     return app.exec();
 }

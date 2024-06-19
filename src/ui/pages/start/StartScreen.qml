@@ -35,6 +35,10 @@ ApplicationWindow{
 
         text: "New"
         imageUrl: "qrc:/assets/icons/plus-circle.svg"
+
+        onClicked{
+            startupManager.create(Qt.application.activeWindow())
+        }
     }
 
     StartScreenButton{
@@ -44,5 +48,9 @@ ApplicationWindow{
 
         text: "Open"
         imageUrl: "qrc:/assets/icons/folder.svg"
+
+        onClicked{
+            startupManager.open(Qt.application.activeWindow())
+        }
     }
 }
