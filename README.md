@@ -8,11 +8,18 @@ College Human Resource Manager
 
 ```
 .
-├src                                Source codes.
-│├lib                               C++ back-end.
-├docs                               Some documents.
-├scripts                            Scripts used for building, etc.
-└xmake.lua                          Xmake configuration file.
+├─src                       Source codes.
+│ ├─lib                     C++ source code.
+│ │ ├─backend               Employees related libraries.
+│ │ └─frontend              Codes to deal with window reactions.
+│ ├─ui                      QML files to describe layouts and props.
+│ │ ├─components            Some shared components.
+│ │ └─pages                 Window pages.
+│ └─assets                  Assets like icons.
+├─scripts                   Automatical scripts during building etc.
+├─docs                      Some documents.
+├─scripts                   Scripts used for building, etc.
+└─xmake.lua                 Xmake configuration file.
 ```
 
 ## Requirements
