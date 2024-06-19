@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/qt/qml/content/">
+    <file alias="App.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/content/App.qml</file>
+    <file alias="Screen01.ui.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/content/Screen01.ui.qml</file>
+    <file alias="fonts/fonts.txt">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/content/fonts/fonts.txt</file>
+  </qresource>
+</RCC>
+

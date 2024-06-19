@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt-project.org/imports/QtQuick/Studio/LogicHelper">
+    <file alias="qmldir">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/qml/QtQuick/Studio/LogicHelper/qmldir</file>
+  </qresource>
+</RCC>
+

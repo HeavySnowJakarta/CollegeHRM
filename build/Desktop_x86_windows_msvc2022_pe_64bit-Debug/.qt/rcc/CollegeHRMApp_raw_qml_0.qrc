@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Main/">
+    <file alias="main.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/main.qml</file>
+  </qresource>
+</RCC>
+

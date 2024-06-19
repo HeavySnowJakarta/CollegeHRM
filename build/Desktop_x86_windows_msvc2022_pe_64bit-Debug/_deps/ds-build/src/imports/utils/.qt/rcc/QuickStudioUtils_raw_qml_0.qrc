@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/QtQuick/Studio/Utils/">
+    <file alias="JsonListModel.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-src/src/imports/utils/JsonListModel.qml</file>
+    <file alias="JsonBackend.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-src/src/imports/utils/JsonBackend.qml</file>
+    <file alias="ChildListModel.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-src/src/imports/utils/ChildListModel.qml</file>
+  </qresource>
+</RCC>
+

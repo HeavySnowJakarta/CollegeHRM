@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/qt/qml/CollegeHRM/">
+    <file alias="Constants.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/imports/CollegeHRM/Constants.qml</file>
+    <file alias="DirectoryFontLoader.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/imports/CollegeHRM/DirectoryFontLoader.qml</file>
+    <file alias="EventListModel.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/imports/CollegeHRM/EventListModel.qml</file>
+    <file alias="EventListSimulator.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/imports/CollegeHRM/EventListSimulator.qml</file>
+  </qresource>
+</RCC>
+

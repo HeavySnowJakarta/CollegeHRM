@@ -1,0 +1,7 @@
+--resource
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-build/src/imports/utils/.qt/rcc/qmake_QtQuick_Studio_Utils.qrc
+--resource
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-build/src/imports/utils/.qt/rcc/QuickStudioUtils_raw_qml_0.qrc
+/QtQuick/Studio/Utils/JsonListModel.qml
+/QtQuick/Studio/Utils/JsonBackend.qml
+/QtQuick/Studio/Utils/ChildListModel.qml

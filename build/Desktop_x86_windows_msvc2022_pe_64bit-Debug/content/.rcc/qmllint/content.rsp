@@ -1,0 +1,13 @@
+--bare
+-I
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/qml
+-I
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/qml
+-I
+C:/Qt/6.7.1/msvc2019_64/./qml
+--resource
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/content/.qt/rcc/qmake_content.qrc
+--resource
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/content/.qt/rcc/content_raw_qml_0.qrc
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/content/App.qml
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/content/Screen01.ui.qml

@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/qt-project.org/imports/QtQuick/Studio/MultiText/">
+    <file alias="MultiTextElement.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-src/src/imports/multitext/MultiTextElement.qml</file>
+    <file alias="MultiTextItem.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-src/src/imports/multitext/MultiTextItem.qml</file>
+    <file alias="MultiTextException.qml">C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-src/src/imports/multitext/MultiTextException.qml</file>
+  </qresource>
+</RCC>
+

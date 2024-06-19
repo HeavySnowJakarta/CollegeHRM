@@ -1,0 +1,75 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"imports/CollegeHRM/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "CollegeHRMplugin_init_autogen_timestamp_deps::@a4b40ead56bc173bf926"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "CollegeHRMplugin_init_autogen::@a4b40ead56bc173bf926",
+	"isGeneratorProvided" : true,
+	"name" : "CollegeHRMplugin_init_autogen",
+	"paths" : 
+	{
+		"build" : "imports/CollegeHRM",
+		"source" : "imports/CollegeHRM"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/imports/CollegeHRM/CMakeFiles/CollegeHRMplugin_init_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/imports/CollegeHRM/CMakeFiles/CollegeHRMplugin_init_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/imports/CollegeHRM/CollegeHRMplugin_init_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

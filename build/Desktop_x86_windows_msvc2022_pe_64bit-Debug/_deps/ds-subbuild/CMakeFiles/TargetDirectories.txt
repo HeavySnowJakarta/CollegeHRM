@@ -1,0 +1,3 @@
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/CMakeFiles/ds-populate.dir
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/CMakeFiles/rebuild_cache.dir

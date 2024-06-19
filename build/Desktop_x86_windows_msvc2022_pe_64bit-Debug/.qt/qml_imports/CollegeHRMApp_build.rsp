@@ -1,0 +1,15 @@
+-rootPath
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM
+-cmake-output
+-output-file
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/.qt/qml_imports/CollegeHRMApp_build.cmake
+-importPath
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/qml/Main
+-importPath
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/qml
+-importPath
+C:/Qt/6.7.1/msvc2019_64/./qml
+-qrcFiles
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/.qt/rcc/configuration.qrc
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/.qt/rcc/qmake_Main.qrc
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/.qt/rcc/CollegeHRMApp_raw_qml_0.qrc

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/ds-build/src/imports/components",
+		"source" : "build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-src/src/imports/components"
+	}
+}

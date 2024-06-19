@@ -1,0 +1,8 @@
+--resource
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/imports/CollegeHRM/.qt/rcc/qmake_CollegeHRM.qrc
+--resource
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/imports/CollegeHRM/.qt/rcc/CollegeHRM_raw_qml_0.qrc
+/qt/qml/CollegeHRM/Constants.qml
+/qt/qml/CollegeHRM/DirectoryFontLoader.qml
+/qt/qml/CollegeHRM/EventListModel.qml
+/qt/qml/CollegeHRM/EventListSimulator.qml

@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_CollegeHRMApp_FILE C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/CollegeHRMApp.exe)
+set(__QT_DEPLOY_TARGET_CollegeHRMApp_RUNTIME_DLLS C:/Qt/6.7.1/msvc2019_64/bin/Qt6Quickd.dll;C:/Qt/6.7.1/msvc2019_64/bin/Qt6QmlModelsd.dll;C:/Qt/6.7.1/msvc2019_64/bin/Qt6OpenGLd.dll;C:/Qt/6.7.1/msvc2019_64/bin/Qt6Guid.dll;C:/Qt/6.7.1/msvc2019_64/bin/Qt6Qmld.dll;C:/Qt/6.7.1/msvc2019_64/bin/Qt6Networkd.dll;C:/Qt/6.7.1/msvc2019_64/bin/Qt6Cored.dll)

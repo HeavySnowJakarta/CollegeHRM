@@ -1,0 +1,12 @@
+-I
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/qml
+-I
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/qml
+-I
+C:/Qt/6.7.1/msvc2019_64/./qml
+--resource
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-build/src/imports/logichelper/.qt/rcc/qmake_QtQuick_Studio_LogicHelper.qrc
+--resource
+C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-build/src/imports/logichelper/.qt/rcc/QuickStudioLogicHelper_raw_qml_0.qrc
+--module
+QtQuick.Studio.LogicHelper

@@ -1,0 +1,21 @@
+# ninja log v5
+5	75	7404903646622963	ds-populate-prefix/src/ds-populate-stamp/ds-populate-mkdir	3cf6cefe77103721
+5	75	7404903646622963	C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/ds-populate-mkdir	3cf6cefe77103721
+75	26586	7404903911666168	ds-populate-prefix/src/ds-populate-stamp/ds-populate-download	dc46395ae2406429
+75	26586	7404903911666168	C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/ds-populate-download	dc46395ae2406429
+26587	41412	0	ds-populate-prefix/src/ds-populate-stamp/ds-populate-update	d976233d4c7dbd8f
+26587	41412	0	C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/ds-populate-update	d976233d4c7dbd8f
+41413	41533	7404904061202130	ds-populate-prefix/src/ds-populate-stamp/ds-populate-patch	911130c6e22f0fb8
+41413	41533	7404904061202130	C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/ds-populate-patch	911130c6e22f0fb8
+41533	41598	7404904061859164	ds-populate-prefix/src/ds-populate-stamp/ds-populate-configure	e1cd84c546076993
+41533	41598	7404904061859164	C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/ds-populate-configure	e1cd84c546076993
+41599	41663	7404904062491847	ds-populate-prefix/src/ds-populate-stamp/ds-populate-build	f9ffb246c212c50a
+41599	41663	7404904062491847	C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/ds-populate-build	f9ffb246c212c50a
+41663	41722	7404904063094552	ds-populate-prefix/src/ds-populate-stamp/ds-populate-install	c28fb6d52f33d9de
+41663	41722	7404904063094552	C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/ds-populate-install	c28fb6d52f33d9de
+41723	41782	7404904063705529	ds-populate-prefix/src/ds-populate-stamp/ds-populate-test	dd953cfe33521dce
+41723	41782	7404904063705529	C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/ds-populate-test	dd953cfe33521dce
+41783	41877	7404904064641172	CMakeFiles/ds-populate-complete	8771918a2e14baf4
+41783	41877	7404904064641172	ds-populate-prefix/src/ds-populate-stamp/ds-populate-done	8771918a2e14baf4
+41783	41877	7404904064641172	C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/CMakeFiles/ds-populate-complete	8771918a2e14baf4
+41783	41877	7404904064641172	C:/Users/bians/projects/CollegeHRM_ide/CollegeHRM/build/Desktop_x86_windows_msvc2022_pe_64bit-Debug/_deps/ds-subbuild/ds-populate-prefix/src/ds-populate-stamp/ds-populate-done	8771918a2e14baf4
