@@ -15,11 +15,23 @@ ApplicationWindow{
     Rectangle{
         id: titleBar
         color: "red"
-        source: "qrc:/ui/components/titlebar.qml"
         height: 60
-        showMinimizeButton: false
-        titleText: "College Human Resource Manager"
 
         anchors.left: parent.left
+
+        Component.onCompleted: {
+            var component = Qt.createComponent("qrc:ui/components/titlebar.qml")
+            if (component.status == Component.Ready){
+                var titleBar = component.createObject(titleBar)
+                titleBar.titleText = "College Human Resource Manager"
+                titleBar.showMinimizeButton = false
+            }
+            else{
+                console.error(
+                    "Error loading titleBar component: ",
+                    component.errorString()
+                )
+            }
+        }
     }
 }
