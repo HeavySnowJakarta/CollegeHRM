@@ -675,7 +675,7 @@
         <file>assets/icons/x-square.svg</file> 
         <file>assets/icons/x.svg</file> 
         <file>ui/components/titlebar.qml</file> 
-        <file>ui/pages/start/button.qml</file> 
-        <file>ui/pages/start/screen.qml</file> 
+        <file>ui/pages/start/StartScreen.qml</file> 
+        <file>ui/pages/start/StartScreenButton.qml</file> 
     </qresource> 
 </RCC> 

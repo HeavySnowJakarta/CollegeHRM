@@ -25,4 +25,23 @@ ApplicationWindow{
 
         // TODO: Usage of custom title bar.
     }
+
+    // The two buttons.
+    StartScreenButton{
+        id: newDatabaseButton
+        x: 106
+        y: 40 // 100 for custom titlebar.
+
+        text: "New"
+        imageUrl: "qrc:/assets/icons/plus-circle.svg"
+    }
+
+    StartScreenButton{
+        id: openDatabaseButton
+        x: 273
+        y: 40 // 100 for custom titlebar.
+
+        text: "Open"
+        imageUrl: "qrc:/assets/icons/folder.svg"
+    }
 }

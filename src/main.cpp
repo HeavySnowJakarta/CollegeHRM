@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
     // Get the QML URL and connect signal and slot function.
     const QUrl start_qml_url =
-        QUrl(QStringLiteral("qrc:/ui/pages/start/screen.qml"));
+        QUrl(QStringLiteral("qrc:/ui/pages/start/StartScreen.qml"));
     QObject::connect(
         &engine, 
         &QQmlApplicationEngine::objectCreated,
