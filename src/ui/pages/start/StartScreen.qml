@@ -5,6 +5,7 @@ import QtQuick.Window
 ApplicationWindow{
     id: startWindow
     visible: true
+
     width: 500
     height: 240 // 300 for custom title bar.
     color: "white"

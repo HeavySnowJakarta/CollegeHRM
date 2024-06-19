@@ -44,3 +44,6 @@ target("CollegeHRM")
     if is_plat("windows") then
         add_cxflags("/Zc:__cplusplus", "/std:c++17")
     end
+
+    -- TODO: Ensure the include path to be proper.
+    add_includedirs("C:\\Qt\\6.7.1\\msvc2019_64\\include\\QtWidgets")

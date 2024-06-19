@@ -1,5 +1,6 @@
 // This file is used to descibe the logic when the program starts.
-// There are two operations 
+// There are two operations of the startup screen: create a new database
+// and open an existing database.
 
 class Startup{
 public:
