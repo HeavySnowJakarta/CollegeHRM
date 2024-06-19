@@ -1,6 +1,6 @@
 -- Basic info.
 set_project("CollegeHRM")
-set_languages("cxxlatest")
+set_languages("cxx17")
 
 -- Basic rules, including generating `compile_command.json` automatically.
 add_rules("mode.debug")
@@ -18,7 +18,10 @@ target("CollegeHRM")
     add_files("src/qml.qrc")
 
     add_packages("cjson")
-    add_headerfiles("src/lib/*.h")
+    add_headerfiles("src/lib/backend/*.h")
+    add_headerfiles("src/lib/frontend/*.h")
+    add_files("src/lib/backend/*.cpp")
+    add_files("src/lib/frontend/*.cpp")
 
     -- Temp debug settings.
     add_defines("QT_DEBUG")
@@ -36,3 +39,8 @@ target("CollegeHRM")
         end
     end)
     ]]
+
+    -- Ensure MSVC uses correct C++ standard and sets __cplusplus correctly
+    if is_plat("windows") then
+        add_cxflags("/Zc:__cplusplus", "/std:c++17")
+    end

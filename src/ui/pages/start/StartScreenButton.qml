@@ -1,11 +1,11 @@
 // The button of the start screen. There would be an icon on the middle of
 // the button, and a line of text beneath it.
 
-import QtQuick
-import QtQuick.Layouts
-import QtQuick.Shapes
+import QtQuick 2.15
+import QtQuick.Layouts 1.15
+import QtQuick.Shapes 1.15
 
-Rectangle{
+Rectangle {
     id: buttonStartScreen
     property alias imageUrl: icon.source
     property alias text: label.text
@@ -17,7 +17,7 @@ Rectangle{
     border.color: "black"
     border.width: 3
 
-    Image{
+    Image {
         id: icon
         anchors.horizontalCenter: parent.horizontalCenter
         y: 20
@@ -26,7 +26,7 @@ Rectangle{
         smooth: true
     }
 
-    Text{
+    Text {
         id: label
         anchors.horizontalCenter: parent.horizontalCenter
         y: 75
@@ -35,13 +35,13 @@ Rectangle{
         font.pixelSize: 25
     }
 
-    MouseArea{
+    MouseArea {
         anchors.fill: parent
         onEntered: {
-            parent.state = "hovered"
+            buttonStartScreen.state = "hovered"
         }
         onExited: {
-            parent.state = ""
+            buttonStartScreen.state = ""
         }
 
         onClicked: {
@@ -51,11 +51,11 @@ Rectangle{
 
     // The state that the mouse is on the button.
     states: [
-        State{
-            name: "hoverd"
-            PropertyChanges{
+        State {
+            name: "hovered"
+            PropertyChanges {
                 target: buttonStartScreen
-                color: "#bababa"
+                color: "#ecf0f1"
             }
         }
     ]
@@ -63,12 +63,17 @@ Rectangle{
     transitions: [
         Transition {
             from: "*"
-            to: "hoverd"
+            to: "hovered"
             reversible: true
-
-            ColorAnimation{
+            ColorAnimation {
                 duration: 400
             }
         }
     ]
+
+    Behavior on color {
+        ColorAnimation {
+            duration: 400
+        }
+    }
 }
