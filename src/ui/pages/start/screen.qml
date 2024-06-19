@@ -8,7 +8,7 @@ ApplicationWindow{
     height: 300
     color: "white"
 
-    flags: Qt.FramelessWindowHint
+    //flags: Qt.FramelessWindowHint
     title: "College Human Resource Manager"
 
     // The title bar.
