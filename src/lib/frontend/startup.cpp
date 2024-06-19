@@ -1,9 +1,14 @@
 #include "startup.h"
 #include "qfiledialog.h"
+#include "qmessagebox.h"
+#include "qstringliteral.h"
 
 #include <QString>
 #include <QFileDialog>
 #include <QGuiApplication>
+#include <QMessageBox>
+#include <QQuickView>
+#include <QQmlContext>
 
 void Startup::create(){
     // Open a dialog and let the user to choose where to save the file.
@@ -13,6 +18,8 @@ void Startup::create(){
         "",
         "Database Files (*.dat)"
     );
+
+    openNewWindow(file_path);
 }
 
 void Startup::open(){
@@ -23,4 +30,29 @@ void Startup::open(){
         "",
         "Database Files (*.dat)"
     );
+
+    openNewWindow(file_path);
+}
+
+void Startup::openNewWindow(QString db_path){
+    if (db_path.isEmpty()){
+        // Show a message box to the user that we failed to open the
+        // database.
+        QMessageBox::critical(
+            nullptr,
+            "Failed to open the database",
+            "The program is trying to open an invalid database."
+        );
+        return;
+    }
+
+    // Initialize a `QQuickView` object.
+    QQuickView* view = new QQuickView();
+    view->rootContext()->setContextProperty("dbPath", db_path);
+    view->setSource(QUrl(QStringLiteral(
+        "qrc:/ui/pages/operate/OperateScreen.qml"
+    )));
+    view->show();
+
+    // TODO: Close current window.
 }
