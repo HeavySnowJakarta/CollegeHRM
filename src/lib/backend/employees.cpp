@@ -7,6 +7,10 @@
 
 /* == Things about initializing == */
 
+Employees::Employees(const char* db_path){
+    
+}
+
 void Employees::initContainers(){
     // The vector of `Employee` objects.
     employees = std::vector<Employee>();

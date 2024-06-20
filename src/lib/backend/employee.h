@@ -61,11 +61,11 @@ public:
     // but there will be no default constructor to generate a null employee.
     Employee(
         unsigned long id,
-        char* name,
+        const char* name,
         enum Sex sex,
         enum EmployeeType type,
-        char* faculty,
-        char* major,
+        const char* faculty,
+        const char* major,
         enum EmployeeTitle title
     );
 

@@ -38,11 +38,8 @@ private:
     // TODO: The path to save autoly.
 
 public:
-    // Initialize the container.
-    // Used to create a new database.
-    inline Employees(){
-        initContainers();
-    }
+    // Initialize the container. Automatically open the database file.
+    inline Employees(const char* db_path);
 
     // Add an employee.
     // Note repeated ids are not accepted.

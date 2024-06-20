@@ -35,3 +35,21 @@ public:
     EmployeeNotFoundError(unsigned int id):
         CollegeHRMException(std::to_string(id).c_str()){}
 };
+
+// When finding unexpected things on the JSON format database file, we think
+// the database has broken.
+
+enum class DatabaseBrokenType{
+    failedToParse, // When cJSON parser returns a NULL data.
+    unexpectedString, // When meeting unexpected strings.
+    lostField, // When failed to read a field.
+};
+
+class DatabaseBrokenException : public CollegeHRMException{
+public:
+    // TODO: Finish the constructor.
+    DatabaseBrokenException(
+        DatabaseBrokenType type,
+        const char* optionalHint = ""
+    );
+};
