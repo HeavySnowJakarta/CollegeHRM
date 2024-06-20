@@ -13,13 +13,13 @@ add_requires("cjson")
 
 -- Target building.
 target("CollegeHRM")
-    add_rules("qt.quickapp")
+    add_rules("qt.application")
     add_files("src/*.cpp")
     add_files("src/qml.qrc")
 
     add_packages("cjson")
     add_headerfiles("src/lib/backend/*.h")
-    add_headerfiles("src/lib/frontend/*.h")
+    add_headerfiles("src/lib/frontend/*.h", {rule = "qt.moc"})
     add_files("src/lib/backend/*.cpp")
     add_files("src/lib/frontend/*.cpp")
 

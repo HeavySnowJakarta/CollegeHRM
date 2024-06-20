@@ -37,7 +37,8 @@ ApplicationWindow{
         imageUrl: "qrc:/assets/icons/plus-circle.svg"
 
         onClicked{
-            startupManager.create(Qt.application.activeWindow())
+            // See `src/lib/frontend/startup.cpp::StartupManager::create()`.
+            startupManager.create()
         }
     }
 
@@ -50,7 +51,8 @@ ApplicationWindow{
         imageUrl: "qrc:/assets/icons/folder.svg"
 
         onClicked{
-            startupManager.open(Qt.application.activeWindow())
+            // See `src/lib/frontend/startup.cpp::StartupManager::open()`.
+            startupManager.open()
         }
     }
 }

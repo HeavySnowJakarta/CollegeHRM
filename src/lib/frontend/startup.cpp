@@ -11,8 +11,11 @@
 #include <QQuickView>
 #include <QQmlContext>
 
-void Startup::create(QObject* window){
-    // Open a dialog and let the user to choose where to save the file.
+Startup::Startup(QQuickView* startup_view, QObject* parent):
+    QObject(parent), startup_view(startup_view){}
+
+void Startup::create(){
+    // Open a window and let the user to choose where to save the file.
     QString file_path = QFileDialog::getSaveFileName(
         nullptr,
         "Create a database",
@@ -20,10 +23,10 @@ void Startup::create(QObject* window){
         "Database Files (*.dat)"
     );
 
-    openNewWindow(window, file_path);
+    openNewWindow(file_path);
 }
 
-void Startup::open(QObject* window){
+void Startup::open(){
     // Open a dialog and let the user to select the file.
     QString file_path = QFileDialog::getOpenFileName(
         nullptr,
@@ -32,10 +35,10 @@ void Startup::open(QObject* window){
         "Database Files (*.dat)"
     );
 
-    openNewWindow(window, file_path);
+    openNewWindow(file_path);
 }
 
-void Startup::openNewWindow(QObject* window, QString db_path){
+void Startup::openNewWindow(QString db_path){
     if (db_path.isEmpty()){
         // Show a message box to the user that we failed to open the
         // database.
@@ -47,13 +50,12 @@ void Startup::openNewWindow(QObject* window, QString db_path){
         return;
     }
 
-    // Initialize a `QQuickView` object.
+    // Close the startup view and create a new page view.
+    startup_view->close();
     QQuickView* view = new QQuickView();
     view->rootContext()->setContextProperty("dbPath", db_path);
     view->setSource(QUrl(QStringLiteral(
         "qrc:/ui/pages/operate/OperateScreen.qml"
     )));
     view->show();
-
-    // TODO: Close current window.
 }

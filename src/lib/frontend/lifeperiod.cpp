@@ -36,14 +36,19 @@ App::App(int argc, char** argv):
         Qt::QueuedConnection
     );
 
+    // Use QQuick.view to show the startup window.
+    QQuickView startup_view;
+    startup_view.setSource(start_qml_url);
+    startup_view.show();
+
     // Register the slot function of loading the database and opening the
     // opeation page.
-    Startup startupManager = Startup();
+    Startup startupManager = Startup(&startup_view);
     engine.rootContext()->setContextProperty("startup", &startupManager);
 
     // Load the QML file.
-    debug("Trying to load startup QML file...");
-    engine.load(start_qml_url);
+    // debug("Trying to load startup QML file...");
+    // engine.load(start_qml_url);
 }
 
 int App::exec(){
