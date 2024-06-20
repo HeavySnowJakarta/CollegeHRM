@@ -1,4 +1,4 @@
-#include "./lib/frontend/lifeperiod.h"
+#include "./lib/frontend-qt/lifeperiod.h"
 
 int main(int argc, char *argv[])
 {

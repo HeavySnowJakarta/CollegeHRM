@@ -14,14 +14,15 @@ add_requires("cjson")
 -- Target building.
 target("CollegeHRM")
     add_rules("qt.application")
+    add_rules("qt.moc")
     add_files("src/*.cpp")
     add_files("src/qml.qrc")
 
     add_packages("cjson")
     add_headerfiles("src/lib/backend/*.h")
-    add_headerfiles("src/lib/frontend/*.h", {rule = "qt.moc"})
+    add_headerfiles("src/lib/frontend-qt/*.h")
     add_files("src/lib/backend/*.cpp")
-    add_files("src/lib/frontend/*.cpp")
+    add_files("src/lib/frontend-qt/*.cpp")
 
     -- Temp debug settings.
     add_defines("QT_DEBUG")
@@ -41,9 +42,10 @@ target("CollegeHRM")
     ]]
 
     -- Ensure MSVC uses correct C++ standard and sets __cplusplus correctly
-    if is_plat("windows") then
-        add_cxflags("/Zc:__cplusplus", "/std:c++17")
-    end
+    -- if is_plat("windows") then
+    --     add_cxflags("/Zc:__cplusplus", "/std:c++17")
+    -- end
 
     -- TODO: Ensure the include path to be proper.
     add_includedirs("C:\\Qt\\6.7.1\\msvc2019_64\\include\\QtWidgets")
+    -- add_frameworks("QTWidgets")
