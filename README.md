@@ -25,17 +25,25 @@ College Human Resource Manager
 ## Requirements
 
 + Proper C/C++ toolchain (MSVC or GCC for example).
-+ Qt (>=6.4) that fit the C/C++ toolchain with Qt Quick built-in.
++ Qt (>=6.4) that fit the C/C++ toolchain with Qt Quick built-in (to use the Qt frontend).
 + Xmake >= 2.6.1
 
 ## Build&Run
 
 ONLY TESTED ON WINDOWS.
 
+To use the console frontend:
+
 ```
+xmake b console
 xmake run
 ```
 
-That's all (when the toolchain is set properly).
+To use the Qt frontend:
+
+```
+xmake b qt
+xmake run
+```
 
 On current stage, the front-end development is just on progress, so you'll only see an example page after compliling (or compliling does not pass is also a normal case).

@@ -80,6 +80,12 @@ public:
 
     // class `Employees` should control the `employee` objects completely.
     friend class Employees;
+
+    // Convert into JSON string.
+    const char* toJson();
+
+    // Get the `Employee` object from the JSON string.
+    static Employee fromJson(const char* json_str);
 };
 
 #endif

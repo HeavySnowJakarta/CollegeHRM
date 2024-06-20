@@ -11,11 +11,20 @@ set_config("export_compile_commands", true)
 -- Library dependencies.
 add_requires("cjson")
 
--- Target building.
-target("CollegeHRM")
+-- Target building with the console frontend.
+target("console")
+    add_files("src/main_console.cpp")
+    add_packages("cjson")
+    add_headerfiles("src/lib/backend/*.h")
+    add_headerfiles("src/lib/frontend-console/*.h")
+    add_files("src/lib/backend/*.cpp")
+    add_files("src/lib/frontend-console/*.cpp")
+
+-- Target building with the Qt frontend.
+target("qt")
     add_rules("qt.application")
     add_rules("qt.moc")
-    add_files("src/*.cpp")
+    add_files("src/main_qt.cpp")
     add_files("src/qml.qrc")
 
     add_packages("cjson")

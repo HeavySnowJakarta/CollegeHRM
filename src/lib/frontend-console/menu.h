@@ -6,10 +6,13 @@ class Menu{
 private:
     Employees employees;
 
+    // A basic operation, let the user to input and do the command.
+    void operate();
+
 public:
     // Let the user create or open a database.
     Menu();
 
-    // A basic operation, let the user to input and do the command.
-    void operate();
+    // Run and return the result value (for the whole program).
+    int run();
 };
