@@ -1,25 +1,32 @@
-// The file to manage the console menu.
+// The file to manage the console menu, as well as file storation managing.
 
 #include "../backend/employees.h"
-
-#include <fstream>
 
 class Menu{
 private:
     // File operations.
     std::string db_path;
-
     Employees employees;
 
-    // A basic operation, let the user to input and do the command.
-    void operate();
+    /* Basic flow paths. */
+
+    // Let the user to input and do the command.
+    int loop();
 
     // Load the database from the file.
     Employees load();
 
     // Tell the user the database has been created.
     // Run when the database is not valid.
-    void noticeCreation();
+    void createDatabase();
+
+    /* Single operations */
+    void add();
+    void del();
+    void revise();
+    void find();
+    void stat();
+    void save();
 
 public:
     // Let the user create or open a database.

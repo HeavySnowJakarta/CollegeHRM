@@ -69,6 +69,9 @@ public:
         enum EmployeeTitle title
     );
 
+    // Get the `Employee` object from the JSON string.
+    Employee(const char* json_str);
+
     // Get the restricted properities.
     Sex getSex();
     const char* getFaculty();
@@ -83,9 +86,6 @@ public:
 
     // Convert into JSON string.
     const char* toJson();
-
-    // Get the `Employee` object from the JSON string.
-    static Employee fromJson(const char* json_str);
 };
 
 #endif

@@ -7,10 +7,6 @@
 
 /* == Things about initializing == */
 
-Employees::Employees(const char* db_path){
-    
-}
-
 void Employees::initContainers(){
     // The vector of `Employee` objects.
     employees = std::vector<Employee>();
@@ -40,6 +36,21 @@ void Employees::initContainers(){
     title_num[EmployeeTitle::seniorLecturer] = 0;
     title_num[EmployeeTitle::lecturer] = 0;
     title_num[EmployeeTitle::teachingAssistant] = 0;
+}
+
+Employees::Employees(std::vector<Employee> employees){
+    // Initialize basic data.
+    initContainers();
+    this->employees = employees;
+
+    // Update the containers.
+    for(Employee i : employees){
+        sex_num[i.sex]++;
+        type_num[i.type]++;
+        title_num[i.title]++;
+
+        faculty_num[i.faculty.c_str()]++;
+    }
 }
 
 /* == CRUD operations == */
@@ -232,7 +243,7 @@ std::vector<std::vector<Employee>::iterator>
 // Considering the complexity of logic, only `countByFaculty` is not an 
 // inline method here.
 
-int Employees::countByFaculty(char* faculty){
+int Employees::countByFaculty(const char* faculty){
     std::string faculty_str = std::string(faculty);
     // If the faculty is not fount on the counter, return 0.
     if (faculty_num.find(faculty_str)==faculty_num.end())

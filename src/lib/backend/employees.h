@@ -35,11 +35,15 @@ private:
         const std::string& short_str
     );
 
-    // TODO: The path to save autoly.
-
 public:
     // Initialize the container. Automatically open the database file.
-    inline Employees(const char* db_path);
+    // Used for empty databases.
+    inline Employees(){
+        initContainers();
+    };
+
+    // Load from employees that already exist.
+    Employees(std::vector<Employee> employees);
 
     // Add an employee.
     // Note repeated ids are not accepted.
@@ -60,6 +64,11 @@ public:
     // return `employees.end()` here.
     inline std::vector<Employee>::iterator getEnd(){
         return employees.end();
+    }
+
+    // To save all the employees, the iterator of begin() has to be provided.
+    inline std::vector<Employee>::iterator getBegin(){
+        return employees.begin();
     }
 
     // Set the provate fields of an employee, with updating the counters.
@@ -90,7 +99,7 @@ public:
     inline int countBySex(Sex sex){
         return sex_num[sex];
     }
-    int countByFaculty(char* faculty);
+    int countByFaculty(const char* faculty);
     inline int countByType(EmployeeType type){
         return type_num[type];
     }
